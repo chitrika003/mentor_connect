@@ -1,0 +1,152 @@
+.mentor-availability {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.availability-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.days-section-title, .time-slots-section-title {
+  color: #3498db;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.availability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.days-section, .time-slots-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Days grid */
+.days-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* margin-bottom: 15px; */
+}
+
+.day-item {
+  flex: 1;
+  min-width: 80px;
+  font-size: 10px;
+  padding: 6px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.day-item:hover {
+  background: #e6f7ff;
+  border-color: #3498db;
+}
+
+.day-item.selected {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Time slots grid */
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.time-slot {
+  padding: 6px;
+  font-size: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.time-slot:hover {
+  background: #e6f7ff;
+  border-color: #3498db;
+}
+
+.time-slot.selected {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+/* Update button */
+.availability-action-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.availability-update-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    background: linear-gradient(to right, #4a6cf7, #00ccff);
+    color: white;
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .availability-update-btn:hover {
+    box-shadow: 0 5px 12px rgba(74, 108, 247, 0.25);
+  }
+  
+  .availability-update-btn:active {
+    transform: translateY(-1px);
+  }
+  
+  .availability-update-btn:disabled {
+    background: linear-gradient(to right, #a0a0a0, #c0c0c0);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+@media (max-width: 600px) {
+  .days-grid {
+    flex-direction: column;
+  }
+  
+  .custom-time-inputs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

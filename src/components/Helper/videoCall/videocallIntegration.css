@@ -1,0 +1,33 @@
+.video-call-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.meeting-title-container {
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.meeting-title {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.jitsi-container {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px); /* Adjust based on your header height */
+    overflow: hidden;
+}

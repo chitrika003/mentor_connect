@@ -1,0 +1,59 @@
+.meetings-history {
+background-color: white;
+border-radius: 8px;
+margin-bottom: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-history-card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #ffffff;
+}
+
+.meeting-history-title {
+font-size: 1.2rem;
+font-weight: 600;
+}
+
+.meeting-history-stats {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 15px;
+padding: 20px;
+}
+
+.stat-card {
+padding: 15px 10px;
+border-radius: 8px;
+text-align: center;
+color: white;
+}
+
+.stat-card h3 {
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 0.9rem;
+}
+
+.stat-number {
+font-size: 1.5rem;
+font-weight: bold;
+margin: 0;
+}
+
+.stat-card.completed {
+    background-color: #6366f1;
+}
+
+.stat-card.confirmed {
+    background-color: #4CAF50;
+}
+
+.stat-card.rejected {
+background-color: #F44336;
+}
+
+.stat-card.pending {
+    background-color: #FF9800;
+}

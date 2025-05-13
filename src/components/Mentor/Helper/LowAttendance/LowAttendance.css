@@ -1,0 +1,289 @@
+/* Main card container */
+.low-attendance-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.low-attendance-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Card header */
+.card-header {
+  margin-bottom: 16px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.warning-icon {
+  font-size: 20px;
+}
+
+.card-title h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Card content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Attendance stats section */
+.attendance-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge-container {
+  position: relative;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.low-attendance-icon {
+  background-color: rgba(255, 86, 48, 0.1);
+  color: #ff5630;
+}
+
+.total-students-icon {
+  background-color: rgba(0, 82, 204, 0.1);
+  color: #0052cc;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff5630;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-secondary {
+  color: #6b778c;
+  font-size: 12px;
+}
+
+.text-strong {
+  font-weight: 600;
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #dfe1e6;
+}
+
+/* Progress bar */
+.attendance-progress {
+  margin-top: 8px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #6b778c;
+}
+
+.progress-container {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4f5f7;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  position: relative;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-bar.danger {
+  background-color: #ff5630;
+}
+
+.progress-bar.warning {
+  background-color: #ffab00;
+}
+
+.progress-bar.normal {
+  background-color: #36b37e;
+}
+
+.progress-bar.danger {
+    background-color: #ff4d4f; /* Red for danger */
+  }
+  
+  .progress-bar.warning {
+    background-color: #faad14; /* Yellow/orange for warning */
+  }
+  
+  .progress-bar.normal {
+    background-color: #52c41a; /* Green for normal */
+  }
+
+/* Student list section */
+.student-list {
+  margin-top: 16px;
+}
+
+.student-list h5 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #172b4d;
+}
+
+.student-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.student-card {
+  background-color: #f4f5f7;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.student-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendance-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.attendance-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.attendance-value.critical {
+  color: #ff5630;
+}
+
+.attendance-value.warning {
+  color: #ffab00;
+}
+
+.more-students {
+  text-align: center;
+  color: #6b778c;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attendance-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .stat-divider {
+    width: 100%;
+    height: 1px;
+    margin: 8px 0;
+  }
+  
+  .student-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* New Progress Bar Styles */
+.new-progress-container {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.new-progress-background {
+  height: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.new-progress-fill {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.new-progress-normal {
+  background-color: #4caf50; /* Green */
+}
+
+.new-progress-warning {
+  background-color: #ff9800; /* Orange */
+}
+
+.new-progress-danger {
+  background-color: #f44336; /* Red */
+}

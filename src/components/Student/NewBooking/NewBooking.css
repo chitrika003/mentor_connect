@@ -1,0 +1,190 @@
+.newbooking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.newbooking-loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.newbooking-loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #4a90e2;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.newbooking-loading-text {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.newbooking-form {
+    /* background-color: #f8f9fa; */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.newbooking-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.newbooking-form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.newbooking-form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.newbooking-booking-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.newbooking-date-grid, .newbooking-time-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.newbooking-date-item, .newbooking-time-item {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+}
+
+.newbooking-date-item:hover, .newbooking-time-item:hover {
+    border-color: #a777e3;
+    background-color: rgba(167, 119, 227, 0.05);
+}
+
+.newbooking-date-item.selected, .newbooking-time-item.selected {
+    background-color: #a777e3;
+    color: white;
+    border-color: #a777e3;
+    font-weight: 500;
+}
+
+.newbooking-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.newbooking-btn-primary {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    box-shadow: 0 3px 8px rgba(167, 119, 227, 0.25);
+    display: block;
+    width: 100%;
+}
+
+.newbooking-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(167, 119, 227, 0.3);
+}
+
+.newbooking-btn-primary:active {
+    transform: translateY(0);
+}
+
+.newbooking-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+}
+
+.newbooking-card-header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.newbooking-card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.newbooking-subtitle {
+    margin-top: 0.3rem;
+    opacity: 0.9;
+    font-size: 0.85rem;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .newbooking-container {
+        padding: 0.8rem;
+    }
+    
+    .newbooking-card-header {
+        padding: 1rem 1.2rem;
+    }
+    
+    .newbooking-card-body {
+        padding: 1.2rem;
+    }
+    
+    .newbooking-date-grid, .newbooking-time-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .newbooking-card-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .newbooking-date-grid, .newbooking-time-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .newbooking-date-item, .newbooking-time-item {
+        padding: 0.4rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,188 @@
+/* Mentor Modal Styles */
+.mentor-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.department-list-title {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.mentor-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.mentor-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.mentor-modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Student Assignment Button */
+.assign-students-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.assign-students-btn:hover {
+  background-color: #45a049;
+}
+
+/* Department List Styles */
+.department-list {
+  margin-bottom: 20px;
+}
+
+.department-item {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.department-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Student List Styles */
+.student-list {
+  margin-top: 10px;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.add-student-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add-student-btn:hover {
+  background-color: #0b7dda;
+}
+
+/* Selected Students Section */
+.selected-students {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.selected-students h3 {
+  margin-bottom: 10px;
+}
+
+.selected-student-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.remove-student-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.remove-student-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Custom Dropdown Styles */
+.custom-dropdown-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-dropdown {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.custom-dropdown:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+  font-size: 12px;
+}
+
+.custom-dropdown:hover {
+  border-color: #4a90e2;
+}
+
+.assigned-student {
+  color: #4CAF50;
+  font-weight: bold;
+}

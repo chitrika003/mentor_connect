@@ -1,0 +1,228 @@
+.mentor-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+  }
+  
+  .mentor-login-card {
+    display: flex;
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .mentor-login-left {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .mentor-login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(25, 47, 89, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .mentor-login-overlay-h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .mentor-login-overlay-p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .mentor-login-right {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  
+  .mentor-login-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .mentor-login-header-h1 {
+    color: #192f59;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .mentor-login-header-p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .mentor-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group-label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group-input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .remember-me-input[type="checkbox"] {
+    accent-color: #4a90e2;
+  }
+
+  .remember-me-label {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .forgot-password {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .forgot-password:hover {
+    color: #2a6fc1;
+    text-decoration: underline;
+  }
+  
+  .login-btn {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #192f59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #0f1d3a;
+  }
+  
+  @media (max-width: 768px) {
+    .mentor-login-card {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      max-width: 500px;
+    }
+    
+    .mentor-login-left {
+      height: 200px;
+    }
+    
+    .mentor-login-overlay h2 {
+      font-size: 1.8rem;
+    }
+    
+    .mentor-login-overlay p {
+      font-size: 1rem;
+    }
+  }
+
+  .mentor-login-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    gap: 10px;
+  }
+
+  .mentor-login-loading-spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mentor-login-loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #192f59;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+  }
+
+  .mentor-login-loading-text {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .admin-login-footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .admin-login-footer-p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .admin-login-footer-span {
+    color: #192f59;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  

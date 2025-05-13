@@ -1,0 +1,22 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin-navbar-container {
+  /* height: 100px; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* z-index: 1000; */
+}
+
+.admin-body-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}

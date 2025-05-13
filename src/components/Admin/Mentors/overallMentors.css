@@ -1,0 +1,174 @@
+.admin-mentors-container {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Mentors section styles */
+.admin-mentors-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-mentors-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-mentors-title {
+  font-size: 1.6rem;
+  margin: 0;
+  color: #333;
+}
+
+.admin-mentors-search-container {
+  width: 300px;
+}
+
+.admin-mentors-search-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.admin-mentors-loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.admin-mentors-loading p {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+/* Mentor cards grid */
+.admin-mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.admin-mentor-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.admin-mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-mentor-header {
+  display: flex;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-mentor-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-mentor-basic-info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin-mentor-basic-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.admin-mentor-basic-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.admin-mentor-details {
+  padding: 15px;
+}
+
+.admin-mentor-details p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.admin-mentors-no-mentors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-mentors-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .admin-mentors-search-container {
+    width: 100%;
+  }
+  
+  .admin-mentors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assign-students-btn {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #6e8efb, #4a6cf7);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(74, 108, 247, 0.3);
+  width: 100%;
+}
+
+.assign-students-btn:hover {
+  background: linear-gradient(135deg, #5d7df9, #3a5ce6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(74, 108, 247, 0.4);
+}
+
+.assign-students-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(74, 108, 247, 0.3);
+}
+
+.assign-students-btn i {
+  font-size: 16px;
+}

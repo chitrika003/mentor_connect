@@ -1,0 +1,75 @@
+/* Cards */
+.meeting-summary-dashboard-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+  
+.meeting-summary-card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    background-color: #ffffff;
+}
+
+.meeting-summary-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.meeting-summary-card-content {
+    padding: 20px;
+}
+
+/* Stats grid */
+.meeting-summary-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .meeting-summary-stat-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+  }
+  
+  .meeting-summary-stat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: white;
+  }
+  
+  .meeting-summary-stat-icon-total {
+    background-color: #3a6ea5;
+  }
+  
+  .meeting-summary-stat-icon-month {
+    background-color: #28a745;
+  }
+  
+  .meeting-summary-stat-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .meeting-summary-stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 3px;
+  }
+  
+  .meeting-summary-stat-value {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
